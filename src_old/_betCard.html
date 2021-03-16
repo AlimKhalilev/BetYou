@@ -1,0 +1,34 @@
+<div class="betCard">
+    <div class="betCard-title">
+        <h3>@@title</h3>
+    </div>
+    <div class="betCard-content">
+        <div class="betCard-content-advance">
+
+            @@for (var i = 0; i < advance.length; i++) {
+                <div class="betCard-content-advance-item">
+                    <div class="betCard-content-advance-item-checkbox">
+                        <svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+                    </div>
+                    <span>`+advance[i]+`</span>
+                </div>
+            }
+
+        </div>
+        <div class="betCard-content-forecasts">
+            <div class="betCard-content-forecasts-count">
+                @@for (var i = 0; i < forecasts.count.length; i++) {
+                    <span>`+forecasts.count[i]+`</span>
+                }
+            </div>
+            <div class="betCard-content-forecasts-cost">
+                @@for (var i = 0; i < forecasts.cost.length; i++) {
+                    <span>`+forecasts.cost[i]+`</span>
+                }
+            </div>
+        </div>
+        <div class="betCard-content-button">
+            @@include("_btnPrimary.html", {"title":"@@button.title", "icon": "null"})
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "starterGulp - Main Page"
+		})
+
+	</head>
+	<body>
+
+		@@include("_header.html")
+
+		<section class="section-outer section-main">
+			<div class="section-inner">
+				<div class="section-main-calendar">
+					<svg><use xlink:href="img/main.svg#icon_calendar"></use></svg>
+					<img src="./img/gulp-demo.png" alt="test">
+				</div>
+			</div>
+		</section>
+
+		<section class="section-outer section-whyUs">
+			<img class="section-whyUs-bg" src="./img/whyUsCard/whyUs_bg_left.png" alt="Фоновая картинка">
+			<div class="section-inner">
+				<h2>Почему стоит выбрать нас</h2>
+				<div class="section-whyUs-cards">
+
+					@@loop('_whyUsCard.html', [
+						{"icon_src": "./img/whyUsCard/whyUsCard_icon_1.svg", "title": "Честные цены", "btn": "Купить прогноз"},
+						{"icon_src": "./img/whyUsCard/whyUsCard_icon_2.svg", "title": "Бесплатные прогнозы", "btn": "Подписаться"},
+						{"icon_src": "./img/whyUsCard/whyUsCard_icon_3.svg", "title": "Открытая статистика", "btn": "Смотреть статистику"},
+					])
+
+				</div>
+
+				@@include("_btnPrimary.html", {"title":"Вконтакте", "icon": "./img/main.svg#icon_vk"})
+				@@include("_btnPrimary.html", {"title":"Чебуречная", "icon": "null"})
+
+				@@include("_betCard.html", {"title":"Silver",
+					"advance": ["При проигрыше даем замену", "Средний коэффициент", "Проходимость"],
+					"forecasts":
+					{
+						"count": ["1 прогноз", "5 прогнозов", "10 прогнозов"],
+						"cost": ["1500$", "2500$", "20000$"]
+					},
+					"button": {"title":"Купить прогноз"}
+				})
+
+				@@include("_betCard.html", {"title":"Gold",
+					"advance": ["Капец я муть навел", "М-дааа, треш", "Проходимость", "Проходимость в яндекс"],
+					"forecasts":
+					{
+						"count": ["1 прогноз", "5 прогнозов", "10 прогнозов"],
+						"cost": ["1500$", "2500$", "20000$"]
+					},
+					"button": {"title":"Купить прогноз"}
+				})
+
+			</div>
+		</section>
+
+		
+
+		@@include("_footer.html")
+
+	</body>
+</html>

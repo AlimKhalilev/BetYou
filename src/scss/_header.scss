@@ -1,0 +1,50 @@
+// === Header [ Стили для навбара, используемые на всех страницах ] ===
+
+.section-header {
+
+    .section-inner {
+    
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+    
+        @media ($media_sm) {
+            flex-direction: column;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 1rem;
+        }
+
+        &-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            @media ($media_sm) {
+                padding: 0 5%;
+            }
+
+            .logo {
+                &-icon {
+                    height: 3.8rem;
+                }
+            }
+        }
+
+        &-menu {
+            @media ($media_sm) {
+                width: 100%;
+                background-color: $color_primary;
+                padding: 2rem 5%;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+// === / Header ===

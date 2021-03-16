@@ -1,0 +1,167 @@
+// === Mixins [ Шаблоны классов стилей, используемых на всех страницах ]===
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: $color_body_bg;
+
+    @media ($media_xl) {
+        font-size: 17px;
+    }
+
+    @media ($media_lg) {
+        font-size: 15px;
+    }
+
+    @media ($media_md) {
+        font-size: 13px;
+    }
+
+    @media ($media_sm) {
+        font-size: 15px;
+    }
+}
+
+.button-primary {
+    background: linear-gradient(180deg, #3F4A99 0%, #8A0094 100%);
+    box-shadow: 0px 2px 0.5rem 0.5rem rgba(39, 69, 150, 0.03);
+    border-radius: 1.2rem;
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    @media ($media_sm) {
+        border-radius: 1rem;
+        padding: 1rem 1.3rem;
+    }
+
+    &:hover {
+        background: linear-gradient(180deg,#6470c3 0%,#9d2da6 100%);
+    }
+
+    svg {
+        max-height: 1.5rem;
+        max-width: 2rem;
+        fill: $color_white;
+        margin-right: 1rem;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 1rem;
+        color: $color_white;
+    }
+
+    &--inverse, &--border, &.inverse, &.border {
+        background: $color_white;
+        box-shadow: 0px 0.1rem 0.3rem 0.3rem rgba(39, 69, 150, 0.03);
+
+        &:hover {
+            background: $color_white;
+            box-shadow: 0px 0.2rem 0.5rem 0.5rem rgba(39, 69, 150, 0.07);
+        }
+
+        span {
+            color: $color_black_main;
+        }
+    }
+
+    &--border, &.border {
+        border: 1px solid $color_black_main;
+    }
+}
+
+.block-title {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: $color_black_main;
+    text-align: center;
+
+    &.invert-color {
+        color: $color_white;
+    }
+}
+
+.picture-flex {
+    picture {
+        display: inline-flex;
+    }
+}
+
+.card {
+    background: $color_white;
+    box-shadow: 0px .1rem .3rem .3rem rgba(39, 69, 150, 0.03);
+    border-radius: 2rem;
+}
+
+.menu {
+
+    @media ($media_sm) {
+        flex-direction: column;
+
+        &-list:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-list {
+        display: flex;
+
+        @media ($media_sm) {
+            flex-direction: column;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        &-item {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: $color_white;
+            text-decoration: none;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            @media ($media_sm) {
+                &:not(:last-child) {
+                    margin: 0 0 2rem;
+                }
+            }
+
+            a {
+                font-size: 0.9rem;
+                font-weight: bold;
+                color: $color_white;
+                text-decoration: none;
+            }
+
+            &.active {
+                a {
+                    background-color: $color_white;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 1rem;
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    height: 3.7rem;
+
+    img {
+        max-height: 100%;
+    }
+}
+
+
+// === / Mixins ===

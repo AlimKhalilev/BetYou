@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "BetYou Landing - Main Page"
+		})
+
+	</head>
+	<body>
+
+		<img class="body-background" src="./img/main_bg.png" alt="Задний фон">
+		<img class="body-background ellipse" src="./img/ellipse_main.png" alt="Задний фон">
+
+		<div class="main-content">
+			@@include("_header.html")
+
+			<section class="section-outer section-main">
+				<div class="section-inner">
+					<div class="main-promo">
+						<h1 class="main-promo__title">Прогнозы на Cпорт</h1>
+						<p class="main-promo__description">
+							Мы охватываем все крупные соревнования и популярные виды спорта, 
+							а команда профессионалов ежедневно публикует прогнозы на спорт с высокой проходимостью
+						</p>
+						<div class="promo-buttons"> 
+							<button class="button-primary"><span>Купить прогноз</span></button>
+							<button class="button-primary button-primary--inverse"><span>Подписаться</span></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<section class="section-outer section-subscribe">
+			<div class="section-inner subscribe">
+				<p class="subscribe-title">Подписывайтесь на наши обновления</p>
+				<div class="subscribe-buttons">
+					<button class="button-primary"><svg><use xlink:href="./img/main.svg#icon_vk"></use></svg><span>ВКонтакте</span></button>
+					<button class="button-primary"><svg><use xlink:href="./img/main.svg#icon_facebook"></use></svg><span>Facebook</span></button>
+				</div>
+			</div>
+		</section>
+		
+
+		<section class="section-outer section-whyus">
+			<img class="section-whyus-bg bg-1" src="./img/whyUs_bg.svg" alt="Фон">
+			<img class="section-whyus-bg bg-2" src="./img/whyUs_bg_left.png" alt="Фон">
+
+			<div class="section-inner whyus">
+				<h2 class="whyus-title block-title">Почему стоит выбрать нас</h2>
+				<div class="whyus-cards">
+
+					<div class="card">
+						<div class="card-icon picture-flex">
+							<img src="./img/whyUsCard_icon_1.svg" alt="Иконка">
+						</div>
+						<div class="card-title">
+							<p>Честные цены</p>
+						</div>
+						<div class="card-button">
+							<button class="button-primary border">Купить прогноз</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-icon picture-flex">
+							<img src="./img/whyUsCard_icon_2.svg" alt="Иконка">
+						</div>
+						<div class="card-title">
+							<p>Бесплатные прогнозы</p>
+						</div>
+						<div class="card-button">
+							<button class="button-primary border">Подписаться</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-icon picture-flex">
+							<img src="./img/whyUsCard_icon_3.svg" alt="Иконка">
+						</div>
+						<div class="card-title">
+							<p>Открытая статистика</p>
+						</div>
+						<div class="card-button">
+							<button class="button-primary border">Смотреть статистику</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section-outer section-bet">
+			<img class="section-bet-bg" src="./img/ellipse_bet.png" alt="Фон">
+
+			<div class="section-inner bet">
+				<h2 class="bet-title block-title">Наши тарифы</h2>
+				<div class="bet-cards">
+
+					<div class="card">
+						<div class="card-title">
+							<h3>Silver</h3>
+						</div>
+						<div class="card-about">
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>При проигрыше даем замену</p>
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Средний коэффициет - <strong>1,7</strong></p> 	
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Проходимость - <strong>75 %</strong></p>
+							</div>
+						</div>
+						<div class="card-price">
+							<div class="card-price-count">
+								<span>1 прогноз</span>
+								<span>5 прогнозов</span>
+								<span>10 прогнозов</span>
+							</div>
+							<div class="card-price-cost">
+								<span>1500р</span>
+								<span>8500р</span>
+								<span>20000р</span>
+							</div>
+						</div>
+						<div class="card-button">
+							<button class="button-primary"><span>Купить прогноз</span></button>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-title">
+							<h3>Silver</h3>
+						</div>
+						<div class="card-about">
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>При проигрыше даем замену</p>
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Средний коэффициет - <strong>1,7</strong></p> 	
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Проходимость - <strong>75 %</strong></p>
+							</div>
+						</div>
+						<div class="card-price">
+							<div class="card-price-count">
+								<span>1 прогноз</span>
+								<span>5 прогнозов</span>
+								<span>10 прогнозов</span>
+							</div>
+							<div class="card-price-cost">
+								<span>1500р</span>
+								<span>8500р</span>
+								<span>20000р</span>
+							</div>
+						</div>
+						<div class="card-button">
+							<button class="button-primary"><span>Купить прогноз</span></button>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-title">
+							<h3>Silver</h3>
+						</div>
+						<div class="card-about">
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>При проигрыше даем замену</p>
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Средний коэффициет - <strong>1,7</strong></p> 	
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Проходимость - <strong>75 %</strong></p>
+							</div>
+						</div>
+						<div class="card-price">
+							<div class="card-price-count">
+								<span>1 прогноз</span>
+								<span>5 прогнозов</span>
+								<span>10 прогнозов</span>
+							</div>
+							<div class="card-price-cost">
+								<span>1500р</span>
+								<span>8500р</span>
+								<span>20000р</span>
+							</div>
+						</div>
+						<div class="card-button">
+							<button class="button-primary"><span>Купить прогноз</span></button>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-title">
+							<h3>Silver</h3>
+						</div>
+						<div class="card-about">
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>При проигрыше даем замену</p>
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Средний коэффициет - <strong>1,7</strong></p> 	
+							</div>
+							<div class="card-about-item">
+								<div class="card-about-item-icon">
+									<svg><use xlink:href="img/main.svg#check_mark"></use></svg>
+								</div>
+								<p>Проходимость - <strong>75 %</strong></p>
+							</div>
+						</div>
+						<div class="card-price">
+							<div class="card-price-count">
+								<span>1 прогноз</span>
+								<span>5 прогнозов</span>
+								<span>10 прогнозов</span>
+							</div>
+							<div class="card-price-cost">
+								<span>1500р</span>
+								<span>8500р</span>
+								<span>20000р</span>
+							</div>
+						</div>
+						<div class="card-button">
+							<button class="button-primary"><span>Купить прогноз</span></button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section-outer section-passability">
+			<div class="section-inner passability">
+				<h2 class="passability-title block-title invert-color">Проходимость тарифов</h2>
+				<div class="passability-tariffs">
+					<div class="tariff">
+						<label class="tariff-procent" data-procent="%">78</label>
+						<p class="tariff-title">Silver</p>
+					</div>
+					<div class="tariff">
+						<label class="tariff-procent" data-procent="%">78</label>
+						<p class="tariff-title">Silver</p>
+					</div>
+					<div class="tariff">
+						<label class="tariff-procent" data-procent="%">78</label>
+						<p class="tariff-title">Silver</p>
+					</div>
+					<div class="tariff">
+						<label class="tariff-procent" data-procent="%">78</label>
+						<p class="tariff-title">Silver</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-outer section-stat">
+			<div class="section-inner stat">
+				<h2 class="stat-title block-title">Статистика прогнозов</h2>
+
+				<div class="stat-items">
+					<div class="item">
+						<span class="item-date">Ноябрь 2020</span>
+						<p class="item-passability">Средняя проходимость - <strong>70%</strong></p>
+						<div class="item-link">
+							<a href="" aria-label="Больше информации">
+								<svg><use xlink:href="img/main.svg#arrow"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<span class="item-date">Ноябрь 2020</span>
+						<p class="item-passability">Средняя проходимость - <strong>70%</strong></p>
+						<div class="item-link">
+							<a href="" aria-label="Больше информации">
+								<svg><use xlink:href="img/main.svg#arrow"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<span class="item-date">Ноябрь 2020</span>
+						<p class="item-passability">Средняя проходимость - <strong>70%</strong></p>
+						<div class="item-link">
+							<a href="" aria-label="Больше информации">
+								<svg><use xlink:href="img/main.svg#arrow"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<span class="item-date">Ноябрь 2020</span>
+						<p class="item-passability">Средняя проходимость - <strong>70%</strong></p>
+						<div class="item-link">
+							<a href="" aria-label="Больше информации">
+								<svg><use xlink:href="img/main.svg#arrow"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<span class="item-date">Ноябрь 2020</span>
+						<p class="item-passability">Средняя проходимость - <strong>70%</strong></p>
+						<div class="item-link">
+							<a href="" aria-label="Больше информации">
+								<svg><use xlink:href="img/main.svg#arrow"></use></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="overflow">
+					<div class="stat-table card">
+
+						<div class="stat-table-header">
+							<h4>Дата</h4>
+							<h4>Вид прогноза</h4>
+							<h4>Кф.</h4>
+							<h4>Итог</h4>
+							<h4>Скриншот</h4>
+						</div>
+	
+						<div class="stat-table-row">
+							<div class="container">
+								<span class="container-date">16.05</span>
+							</div>
+							<div class="container">
+								<span class="container-type">Gold</span>
+							</div>
+							<div class="container">
+								<span class="container-coef">3.6504</span>
+							</div>
+							<div class="container">
+								<span class="container-status success">Прошел</span>
+							</div>
+							<div class="container">
+								<button class="container-button button-primary border">Смотреть</button>
+							</div>
+						</div>
+	
+						<div class="stat-table-row">
+							<div class="container">
+								<span class="container-date">16.05</span>
+							</div>
+							<div class="container">
+								<span class="container-type">Gold</span>
+							</div>
+							<div class="container">
+								<span class="container-coef">3.6504</span>
+							</div>
+							<div class="container">
+								<span class="container-status success">Прошел</span>
+							</div>
+							<div class="container">
+								<button class="container-button button-primary border">Смотреть</button>
+							</div>
+						</div>
+	
+						<div class="stat-table-row">
+							<div class="container">
+								<span class="container-date">16.05</span>
+							</div>
+							<div class="container">
+								<span class="container-type">Gold</span>
+							</div>
+							<div class="container">
+								<span class="container-coef">3.6504</span>
+							</div>
+							<div class="container">
+								<span class="container-status fail">Не прошел</span>
+							</div>
+							<div class="container">
+								<button class="container-button button-primary border">Смотреть</button>
+							</div>
+						</div>
+	
+						<div class="stat-table-row">
+							<div class="container">
+								<span class="container-date">16.05</span>
+							</div>
+							<div class="container">
+								<span class="container-type">Gold</span>
+							</div>
+							<div class="container">
+								<span class="container-coef">3.6504</span>
+							</div>
+							<div class="container">
+								<span class="container-status success">Прошел</span>
+							</div>
+							<div class="container">
+								<button class="container-button button-primary border">Смотреть</button>
+							</div>
+						</div>
+	
+						<div class="stat-table-row">
+							<div class="container">
+								<span class="container-date">16.05</span>
+							</div>
+							<div class="container">
+								<span class="container-type">Gold</span>
+							</div>
+							<div class="container">
+								<span class="container-coef">3.6504</span>
+							</div>
+							<div class="container">
+								<span class="container-status success">Прошел</span>
+							</div>
+							<div class="container">
+								<button class="container-button button-primary border">Смотреть</button>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section-outer section-contacts">
+			<div class="section-inner contacts">
+				<div class="contacts-content">
+					<h2 class="contacts-content-title block-title">Наши контакты</h2>
+					<p class="contacts-content-description">
+						Любой вопрос Вы можете задать нашему менеджеру в Telegram канале или в VK. 
+						Переходите и спрашивайте, мы с удовольствием Вам поможем
+					</p>
+					<div class="contacts-content-buttons"> 
+						<button class="button-primary"><svg><use xlink:href="./img/main.svg#icon_vk"></use></svg><span>ВКонтакте</span></button>
+						<button class="button-primary"><svg><use xlink:href="./img/main.svg#icon_facebook"></use></svg><span>Facebook</span></button>
+					</div>
+				</div>
+				<div class="contacts-img">
+					<img src="./img/contacts-img.png" alt="Изображение">
+				</div>
+			</div>
+		</section>
+
+		@@include("_footer.html")
+
+	</body>
+</html>

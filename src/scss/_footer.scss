@@ -1,0 +1,61 @@
+// === Footer [ Стили для футера, используемые на всех страницах ] ===
+
+.section-footer {
+    background-color: $color_footer_bg;
+
+    .section-inner {
+    
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 0;
+
+        @media ($media_sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 3rem 0;
+        }
+
+        &-logo {
+            @media ($media_sm) {
+                margin: 3rem 0;
+                order: 2;
+            }
+        }
+
+        &-rights {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: $color_footer_text;
+
+            @media ($media_sm) {
+                order: 3;
+            }
+        }
+
+        &-menu {
+            @media ($media_sm) {
+                width: 100%;
+            }
+            
+            .menu-list-item {
+                a {
+                    font-weight: 500;
+                    color: $color_footer_text;
+                }
+
+                &.active {
+                    a {
+                        color: $color_footer_bg;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// === / Footer ===

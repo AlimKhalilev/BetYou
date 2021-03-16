@@ -1,0 +1,29 @@
+.btnPrimary {
+    background: linear-gradient(180deg, #3F4A99 0%, #8A0094 100%);
+    box-shadow: 0px 2px 0.5rem 0.5rem rgba(39, 69, 150, 0.03);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(180deg,#6470c3 0%,#9d2da6 100%);
+    }
+
+    svg {
+        max-height: 1.5rem;
+        max-width: 2rem;
+        fill: $color_white;
+        margin-right: 1rem;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 0.02em;
+        color: $color_white;
+    }
+}
