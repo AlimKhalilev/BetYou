@@ -99,7 +99,16 @@
 }
 
 .promo-buttons {
-    display: flex;   
+    display: flex; 
+    
+    @media ($media_xs) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        button:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
 
     button:not(:last-child) {
         margin-right: 1rem;
@@ -291,7 +300,9 @@
             row-gap: 5rem;
 
             @media ($media_sm) {
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                row-gap: 0;
             }
 
             .card {
@@ -300,6 +311,10 @@
 
                 @media ($media_sm) {
                     width: 95%;
+
+                    &:not(:last-child) {
+                        margin-bottom: 5rem;
+                    }
                 }
 
                 &-title {
@@ -365,6 +380,7 @@
 
                     @media ($media_sm) {
                         padding: 1.2rem 2rem 3rem;
+                        flex-direction: column;
                     }
 
                     &-count, &-cost {
@@ -388,6 +404,10 @@
                     &-count {
                         span {
                             padding: calc(0.5rem + 0.1rem) 1.8rem;
+                        }
+
+                        @media ($media_sm) {
+                            margin-bottom: 1rem;
                         }
                     }
 
@@ -430,6 +450,10 @@
     .passability {
         padding: 5rem 0 7rem;
 
+        @media ($media_xs) {
+            padding: 2rem 0 0;
+        }
+
         &-tariffs {
             display: flex;
             justify-content: space-evenly;
@@ -441,6 +465,10 @@
                 padding-right: 3rem;
             }
 
+            @media ($media_xs) {
+                margin-top: 2rem;
+            }
+
             .tariff {
                 display: flex;
                 flex-direction: column;
@@ -449,6 +477,10 @@
                 @media ($media_sm) {
                     flex-basis: 50%;
                     transform: scale(0.8);
+                }
+
+                @media ($media_xs) {
+                    transform: scale(0.6);
                 }
 
                 &-procent {
@@ -655,6 +687,10 @@
         align-items: center;
         padding: 8rem 0;
 
+        @media ($media_xs) {
+            padding: 10rem 0 5rem 0;
+        }
+
         &-content {
             flex-basis: 40%;
         }
@@ -673,6 +709,15 @@
     
             &-buttons {
                 display: flex;
+
+                @media ($media_xs) {
+                    flex-direction: column;
+                    align-items: flex-start;
+            
+                    button:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
 
                 button {
                     &:not(:last-child) {

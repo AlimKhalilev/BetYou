@@ -21,6 +21,10 @@ html, body {
     @media ($media_sm) {
         font-size: 15px;
     }
+
+    @media ($media_xs) {
+        font-size: 14px;
+    }
 }
 
 .button-primary {
@@ -54,6 +58,7 @@ html, body {
         font-weight: 700;
         font-size: 1rem;
         color: $color_white;
+        white-space: nowrap;
     }
 
     &--inverse, &--border, &.inverse, &.border {
@@ -82,6 +87,7 @@ html, body {
     letter-spacing: 0.02em;
     color: $color_black_main;
     text-align: center;
+    overflow-wrap: break-word;
 
     &.invert-color {
         color: $color_white;
