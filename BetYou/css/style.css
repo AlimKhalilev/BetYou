@@ -829,10 +829,29 @@ body {
 }
 
 .menu-list-item a {
+  position: relative;
   font-size: 0.9rem;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu-list-item a::after {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 0%;
+  background-color: #fff;
+  left: 0;
+  bottom: -0.5rem;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-list-item a:hover::after {
+  width: 100%;
 }
 
 .menu-list-item.active a {
@@ -840,6 +859,10 @@ body {
   padding: 0.2rem 0.5rem;
   border-radius: 1rem;
   color: #701f95;
+}
+
+.menu-list-item.active a::after {
+  display: none;
 }
 
 .logo {
@@ -1024,6 +1047,7 @@ body {
 .main-content {
   position: relative;
   height: 100vh;
+  max-height: 50rem;
 }
 
 .section-main-calendar {
